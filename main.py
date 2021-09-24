@@ -9,4 +9,7 @@ def generateOtp(length):
 
 
 if __name__ == '__main__':
-    generateOtp(int(input("Enter the length of OTP: ")))
+    try:
+        generateOtp(int(input("Enter the length of OTP: ")))
+    except:
+        print("Invalid input entered")
